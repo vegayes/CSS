@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'IAMAPLAYER';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box;
+    font-family: 'IAMAPLAYER'; /* 글꼴 모양*/
+    font-size : 20px; /* 글꼴 크기*/
 }
+
+
 
 #left {background-color: lightblue; }
 #center { background-color : rgb(225, 243, 202); }
@@ -12,6 +23,7 @@
     height: 500px;
     border : 3px  solid black;
     justify-content: space-between;
+    text-align : center;
 }
 
 .inline-block{
@@ -51,36 +63,60 @@
     width: 500px;
     height : 500px;
     border : 3px solid black;
+    text-align : center;
 }
 
 .first{
     height: 20%;
+    background-color: red;
+    line-height: 500%
 }
+
+.screen1{
+    width: 20%;
+    height: 80%;
+    background-color: pink;
+    float : left;
+    line-height: 500%
+}
+
+.screen2{
+    width: 80%;
+    height: 80%;
+    background-color: yellow;
+    float: left;
+}
+
+.Content{
+	height: 70%;
+	background-color: purple;
+}
+
 
 /* 위 */
-#container > .first:first-of-type{
+/* #container > .first:first-of-type{
     background-color: red;
     color : white;
-}
+} */
 
 /* 아래 */
-#container > .first:not(:first-of-type){
+/* #container > .first:not(:first-of-type){
     display : inline-block;
     background-color: blue;
-}
+} */
 
-.second{
+/* .second{
     width: 20%;
     height: 80%;
     color :brown;
-}
+} */
 
-.thrid{
+/* .thrid{
     width:80%;
     height : 60%;
     color : yellow;
     display : block;
-}
+} */
 
 /*
 .last{
@@ -104,3 +140,93 @@
 
 
 /* 마지막 아래 */
+
+
+/*----------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 100px 150px 1fr 150px 100px;
+    grid-template-areas: 'header header header'
+                         'menu main top'
+                         'menu main aside'
+                         'menu main bottom'
+                         'footer footer footer';
+
+}
+
+.container div{
+
+    background-color: skyblue;
+    padding : 20px;
+    border : 1px solid black;
+
+}
+
+.header {
+    grid-area : header;
+}
+
+.menu {
+    grid-area : menu;
+}
+
+.main {
+    grid-area : main;
+}
+
+.top {
+    grid-area : top;
+}
+
+.aside {
+    grid-area : aside;
+}
+
+.bottom {
+    grid-area : bottom;
+}
+
+.footer{
+    grid-area : footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
