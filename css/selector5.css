@@ -1,0 +1,99 @@
+/*:only child*/
+#test1 > p:only-child{ /* 자식이 2개인 경우는 선택되지 않음.*/
+    background-color: steelblue;
+}
+
+
+/*:only-of-type*/
+#test2 > p:only-of-type{ /* test2의 자식 pTag가 1개인 경우를 파악함. */
+    background-color: rebeccapurple;
+}
+
+
+/*:empty*/
+#test3 > p:empty{
+    background-color: greenyellow;
+    height : 30px;
+}
+
+
+/* 여러 선택자 동시 선택 */
+#test4-1, #test4-2, .test4-3{
+    background-color: yellow;
+    border : 3px solid black;
+
+    /* 모든 요소에는 여백이 있음. 
+    margin을 없앤 상태에서 적용해야 하는 경우에 
+    margin : 0; 으로 설정한 상태를 자주 사용함.
+    */
+}
+
+
+/* 특정 요소 내부에 있는 특정 클래스만 선택*/
+#test5-1 > .c5{
+    /* #test5-1의 후손 중 클래스가 c5인 요소를 선택 */
+    background-color: yellow;
+}
+
+
+#test5-2 > li.c5{ /* 자식이 li이면서 c5인값.*/
+
+    /* #test5-2의 자식 중 클래스가 c5인 li요소만 선택*/
+    background-color: brown;
+}
+
+
+#test5-2 > li .c5{ /* 띄어쓰면 li의 후손*/
+    background-color:lightgray;
+}
+
+
+.test6.c6{
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
