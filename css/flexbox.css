@@ -87,7 +87,7 @@ div{
         -> 양끝은 조금, item 중간은 넓게 떨어져 있음.
         -> 브라우저 크기에 따라 변함    
     */
-    /* justify-content: space-around; */
+    justify-content: space-around;
 
 
     /* item이 메인축 내에서 동일한 간격을 가진다.*/
@@ -101,14 +101,14 @@ div{
     /* align-items */
     /* item들을 '교차축 방향으로 정렬'하는 방법을 지정하는 속성 */
     /* align-items: flex-start; */
-    /* align-items: flex-end; */
+    align-items: flex-end;
 
     /* 정가운데*/
     /* align-items : center;
     flex-direction: column;
     align-items : center; */
 
-    align-items:flex-start;
+    /* align-items:flex-start; */
 
 }
 

@@ -1,0 +1,129 @@
+*{
+    text-align :center;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    border: 4px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    flex-basis: 10%;
+    display: flex;
+    background-color: yellow;
+}
+
+.left{
+    flex-basis: 10%;
+    border: 2px solid black;    
+}
+
+
+.center{
+    flex-basis:45%;
+    border: 2px solid black;    
+}
+
+
+.right{
+    flex-basis: 45%;
+    border: 2px solid black;    
+}
+
+
+
+
+.bottom{
+    flex-basis: 90%;
+    display: flex;
+}
+
+.session1{
+    flex-basis: 20%;
+    border: 2px solid black;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .top{
+    flex-basis : 30%;
+    border : 2px solid black;
+}
+
+.body{
+    flex-basis : 40%;
+    border : 2px solid black;
+} */
+
+/* 균등하게 3등분 하기 ==> 계산식 사용*/
+.top, .body{
+    flex-basis : calc(100% / 3);
+    border : 2px solid black;
+}
+
+
+.session3{
+    flex-basis: 50%;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top3{
+    flex-basis: 50%;
+    border: 2px solid black;
+    background-color: orange;
+}
+
+.session5{
+    flex-basis : 50%;
+    border : 2px solid black;
+    background-color: red;
+
+    display: flex;
+}
+
+.session6, .right5{
+    flex-basis: 50%;
+    border : 2px solid black;
+    display:flex;
+    flex-direction: column;
+}
+
+.top6 , .bottom6{
+    flex-basis : 50%;
+    border-bottom : 2px solid black;
+}
+
+
+
+
+
+.session2, .session4{
+    flex-basis: 15%;
+    border: 2px solid black;
+    background-color: pink;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top4{
+    flex-basis : 20%;
+    border-bottom : 4px solid black;
+}
+
+.body4{
+    flex-basis : 80%;
+    border-bottom : 4px solid black;
+}
+
+/* 이름 지정이 안된 경우  */
+/* .sessuib4  > div : nth-of-type(1) */
