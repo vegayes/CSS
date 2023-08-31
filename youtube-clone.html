@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube</title>
+
+        <link rel="stylesheet" href="/02_CSS/css/youtube-clone.css">
+
+        <!-- fontaswesom 아이콘 사용할 수 있는 스크립트 연결-->
+        <script src="https://kit.fontawesome.com/ac58eafae7.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <Main>
+            <header>
+                <section class = "menu">
+                    <button id  = "menu-btn" class="fa-solid fa-bars"></button>
+                    <a  href="https://www.youtube.com/">
+                        <img src = "../images/youtube-logo.png" id = "youtube-logo">
+                    </a>
+                </section>
+    
+                <section class = "search">
+                    <div class = "search1">
+                        <form action = "#" name = "search-form">
+                            <fieldset class = "search-field">
+                                <input type ="search" id = "search-input" name = "search" placeholder="검색">
+                                <!-- keyboard는 나중에 atag로 바꿀 것!! -->
+                                <button id = "keyboard-btn" class="fa-regular fa-keyboard"></button> 
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class = "search2">
+                        <button id = "search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    </div>
+                    <div class = "search3">
+                        <button id = "microphone-btn" class="fa-solid fa-microphone"></button>
+                    </div>
+                </section>
+    
+                <section class = "user">
+                    <button id = "new-video" class="fa-solid fa-file-video"></button>
+                    <button id = "alarm" class="fa-regular fa-bell"></button>
+                    <button id = "user" class="fa-regular fa-circle-user"></button>
+                </section>
+            </header>
+
+
+            <section class="display">
+                <section class = "display1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8pfjLoEFRZ0?si=KZV7Pf2cB-JoQ-Pj" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                    비디오재생</iframe>
+
+                    <section id = "video-info">재생 정보</section>
+
+                    <section id = "video-data">조회 수 및 비디오 데이터</section>
+
+                    <section id = "comment">댓글</section>
+                </section>
+
+                <section class = "display2">
+                    <section id = "play-menu"></section>
+
+                    
+                    <section id = "play-list">
+                        <ul>
+                            <li class = "list1">재생목록 1</li>
+                            <li class = "list2">재생목록 2</li>
+                            <li class = "list3">재생목록 3</li>
+                        </ul>
+                    </section>
+
+                    
+                </section>
+            </section>
+
+
+
+
+
+
+
+
+
+        </Main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>

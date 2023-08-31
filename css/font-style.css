@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+#weight-test > li {
+    font-size : 34px;
+}
+
+#weight-test > li:nth-child(1){
+    font-weight: 600;
+}
+
+#weight-test > li:nth-child(2){
+    font-weight: bold;
+}
+
+#weight-test > li:nth-child(3){
+    font-weight: bolder; 
+    /* 상속받은 normal보다 더 굵게  */
+}
+
+#weight-test > li:nth-child(4){
+    font-weight: lighter;
+    /* 상속받은 normal보다 더 얇게 */
+}
+
+#weight-test > li:nth-child(5){
+    font-weight: normal;
+
+    /* 글꼴의 모양을 지정하는 속성 */
+    font-style: italic; /* 글씨 휘어짐 */
+}
+
+.cls > li {
+    font-size : 24px;
+}
+
+#family-test1 > li:nth-child(1){
+    font-family:'궁서'; /*설치된 폰트인 경우*/
+}
+
+#family-test1 > li:nth-child(2){
+    font-family : '배달의 민족' ;
+    /* 없는 폰트인 경우 기본 폰트로 설정됨 */
+  }
+
+#family-test1 > li:nth-child(3){
+    font-family : '배달의 민족' , '굴림체';
+      /* 폰트를 나열하여 없는 폰트의 경우 다음 폰트가 있을 때 그 폰트를 적용함. */
+}
+
+/* 웹폰트 */
+#family-test2 > li:nth-child(1){
+    /* 구글에서 link를 통해 가져와 html의 header에 복붙 후 
+     CSS에서 해당 이름을 가져옴 */
+    font-family: 'Rubik Iso', cursive;
+}
+
+#family-test2 > li:nth-child(2){
+    /* 구글에서 @import를 가져온 경우 CSS의 최상단에 위치해야 함.  
+     CSS에서 해당 이름을 가져옴 */
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+
+/* 눈누에서 font-face를 복붙한 경우  */
+@font-face {
+    font-family: 'KCCMurukmuruk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCMurukmuruk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#family-test2 > li:nth-child(3){
+    font-family: 'KCCMurukmuruk';
+}
+
+
+
+
+
+
+
+

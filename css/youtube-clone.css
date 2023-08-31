@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 영역나누기 (div, section)*/
+section{
+    border : 1px solid red;
+}
+
+
+/* --------------------------------------- */
+/* main */
+
+header{
+    height: 56px;
+    display: flex;
+
+    position : sticky ;
+    background-color: white;
+}
+
+header > section:first-child{
+    flex-basis: 15%;
+}
+
+#youtube-logo{
+    width: 97px; 
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menu-btn{
+    flex-basis :10%;
+    cursor: pointer;
+
+    font-size: 24px ;
+
+    border : none;
+    background-color: transparent;
+}
+
+
+/* 검색창 영역*/
+header > section:nth-child(2){
+    flex-basis : 70%;
+
+    /* 2영역 나누기 => 검색 , 마이크*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search1 fieldset{
+    width: 568px;
+    height: 48px;
+    flex-basis: 90%;
+    border : 2px solid #ddd;
+    border-radius: 100px 0px 0px 100px;
+    margin : 0 ;
+    padding : 0px 4px 0px 16px;
+
+    display: flex;
+}
+
+/* 나중에 빨간거 지울때 없애도 됨 */
+.search1{
+    border: 0;
+}
+
+
+#search-input{
+
+    flex-basis : 90%;
+    padding : 0 4 0 16;
+    font-size:24px;
+
+    border : none;
+    outline: none;
+}
+
+#keyboard-btn{
+    flex-basis: 10%;
+
+    cursor: pointer;
+    padding : 0 4;
+    font-size:24px;
+    background-color: transparent;
+    border : none;
+    outline: none;  
+
+}
+
+.search2{
+    width: 64px;
+    height: 48px;   
+    padding : 1px 16px; 
+    border : 2px solid #ddd;
+    border-left: 0;
+    border-radius: 0px 100px 100px 0px;
+    margin : 0 ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F0F0F0;
+
+}
+
+.search2:hover{
+    border : 0;
+    background-color: #83838371;
+}
+
+#search-btn{
+    /* flex-basis : 10%; */
+    cursor:pointer;
+    font-size:24px;
+    color : black;
+    background-color: transparent ;
+
+    border : none;
+}
+
+.search3{
+    height: 48px;
+    width: 78px;
+    padding :  0px  0px 0px 30px  ; 
+}
+
+#microphone-btn{
+    border : 0;
+    background-color: #F0F0F0;
+
+    width: 100%;
+    height: 100%;
+    cursor : pointer;
+    border-radius: 50%;
+    font-size:24px;
+    margin : 0 ;
+    padding : 2px;
+}
+    
+#microphone-btn:hover{  
+    border : 0;
+    background-color: #83838371;
+}
+
+.user, .menu{
+    
+    padding :  0px 30px 0px 0px;
+}
+
+header > section:last-child{
+    flex-basis: 15%;
+
+    /* 3영역 나누기 */
+    display: flex;
+    justify-content: right;
+    align-items:center;
+}
+
+#new-video{
+    /* flex-basis : 22%; */
+    border : 0;
+    background-color: transparent;
+
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+#new-video:hover{
+    border : 0;
+    background-color: #83838371;    
+}
+
+#alarm{
+    /* flex-basis : 22%; */
+    border : 0;
+    background-color: transparent;
+
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+#alarm:hover{
+    border : 0;
+    background-color: #83838371;    
+}
+
+
+#user{
+    /* flex-basis : 22%; */
+    border : 0;
+    background-color: transparent;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+#user:hover{
+    border : 0;
+    background-color: #83838371;    
+}
+
+
+/* ----------------------본문-------------------- */
+
+.display{
+
+    height: 2000px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.display1{
+    flex-basis: 70%;
+
+    padding : 30px 0px 0px 100px;
+            /* 상  우  하   좌 */
+
+
+    /* 아직 사용할지 안할지 모름 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.display1 iframe{
+    
+}
+
+
+.display2{
+    flex-basis: 30%;
+    /* padding : 30px ; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 반응형 모바일 기준 :: 미디어 쿼리 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
+@media all and ( max-width : 767px){
+
+/* 태그  부르기! */
+
+/* 검색창 안보ㄱ이게하기 => display : none */
+
+
+}
+
+/* pc해상도 1024px */
+@media all and (min-width :1024px){
+
+}
+
+/* px 해상도 1024px */
+@media all and (min-width :1024px){}
+
+
+
+
