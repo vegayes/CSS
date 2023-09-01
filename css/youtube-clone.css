@@ -1009,14 +1009,10 @@ header > section:last-child{
         padding : 24px;
     }
 
-    .display1{
-        width: 100%;
-    }
-
+    .display1,
     .display2{
         width: 100%;
-    }   
-
+    }
 
     #play-list ul{
         align-items: center;
