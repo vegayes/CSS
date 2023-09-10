@@ -55,7 +55,11 @@ p[name="name-1"] {
     background-color: pink;
     width: 230px;
     height: 230px;
+
+    list-style-type: disc;
 }
+
+
 
 /* #hover-test 요소가 변화를 일으키면 0.5초 동안 변해라*/
 #hover-test { 
@@ -93,7 +97,7 @@ input[name="fruits"]:checked {
     background-color: olive;
 }
 
-/* #div3 ~ div {
+/* #div3 ~ div:not(:nth-child(1)) {
     background-color:lightcoral ;
 } */
 
@@ -114,7 +118,7 @@ input[name="fruits"]:checked {
 
 /* 체크된 #check1 뒤에 있는 label 태그 */
 #check1:checked + label {
-    background-image: url(../../images/check.png);
+    background-image: url(../../HTML/images/check.png);
 
     background-repeat: no-repeat;
     background-size : cover;
